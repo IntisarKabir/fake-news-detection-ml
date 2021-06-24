@@ -1,4 +1,4 @@
-#lstm_spam_detection1.1.py
+#boilerplate 
 
 
 
@@ -45,8 +45,4 @@ import pickle
 
 sns.countplot(df["SpamHam"])
 
-
-
-
-#test branch
 
