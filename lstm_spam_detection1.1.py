@@ -45,3 +45,15 @@ sns.countplot(df["SpamHam"])
 
 
 
+def word_count_plot(data):
+     # finding words along with count
+     word_counter = collections.Counter([word for sentence in data for word in sentence.split()])
+     most_count = word_counter.most_common(30) # 30 most common words
+     # sorted data frame
+     most_count = pd.DataFrame(most_count, columns=["Word", "Count"]).sort_values(by="Count")
+     most_count.plot.barh(x = "Word", y = "Count", color="green", figsize=(10, 15))
+word_count_plot(data["Tweet"])
+
+
+
+
