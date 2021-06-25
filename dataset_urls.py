@@ -1,0 +1,23 @@
+
+
+
+
+dataset_url = "https://raw.githubusercontent.com/IntisarKabir/ml-datasets/main/commonDatasets/spam.csv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
