@@ -31,10 +31,12 @@ uploaded = files.upload()
 from pandas import Series
 
 
-
-from keras.layers import SimpleRNN, Embedding, Dense, LSTM
+import keras
+from keras.layers import SimpleRNN, Embedding, Dense, LSTM,  Embedding, Dropout
 from keras.models import Sequential
-
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
+import pickle
 
 
 
